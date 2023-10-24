@@ -42,7 +42,6 @@
             </li>
           </ul>
         </nav>
-
         <address class="header-address" id="contacts">
           <ul class="header-address-list list">
             <li class="header-address-item">
@@ -76,7 +75,9 @@
           </button>
           <ul class="mob-menu-list list">
             <li class="mob-menu-item">
-              <a href="./index.html" class="mob-menu-link link">Studio</a>
+              <a href="./index.html" class="mob-menu-link link current"
+                >Studio</a
+              >
             </li>
             <li class="mob-menu-item">
               <a href="#portfolio" class="mob-menu-link link">Portfolio</a>
@@ -89,15 +90,15 @@
           <div>
             <ul class="mob-address-list list">
               <li class="mob-address-item">
+                <a href="tel:+110001111111" class="mob-address-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
                 <a
                   href="mailto:info@devstudio.com"
                   class="mob-address-link link"
                   >info@devstudio.com</a
-                >
-              </li>
-              <li class="mob-address-item">
-                <a href="tel:+110001111111" class="mob-address-link link"
-                  >+11 (000) 111-11-11</a
                 >
               </li>
             </ul>
@@ -694,26 +695,26 @@
               <div class="portfolio-position">
                 <picture class="portfolio-picture">
                   <source
-                    srcset="./images/onlain.jpg 1x, ./images/onlain-2x.jpg 2x"
+                    srcset="./images/online.jpg 1x, ./images/online-2x.jpg 2x"
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/onlain-plan.jpg    1x,
-                      ./images/onlain-plan-2x.jpg 2x
+                      ./images/online-plan.jpg    1x,
+                      ./images/online-plan-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/onlain-mob.jpg    1x,
-                      ./images/onlain-mob-2x.jpg 2x
+                      ./images/online-mob.jpg    1x,
+                      ./images/online-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
 
                   <img
-                    src="./images/portfolio-img-6.jpg"
+                    src="//images/online.jpg"
                     alt="Online Courses"
                     width="360"
                     class="portfolio-img"
@@ -826,7 +827,7 @@
     <!---------------------------------->
 
     <!-------modal-------->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">

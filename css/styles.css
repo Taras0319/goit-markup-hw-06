@@ -49,6 +49,7 @@ address {
 
 /*----- header -----*/
 .header {
+  
   border-bottom: 1px solid #E7E9FC;
   background: #FFF;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -106,6 +107,9 @@ address {
   height: 24px;
   fill: currentColor;
 }
+
+
+
 
 /*======mob-menu======*/
 .mob-menu {
@@ -169,6 +173,7 @@ address {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  
 }
 
 .mob-menu-item {}
@@ -188,6 +193,19 @@ address {
 .mob-menu-link:active {
   color: #404bbf;
 }
+
+.current{
+  color: #404BBF;
+}
+
+.mob-address-tel{
+  color: #4D5AE5;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2px;
+  letter-spacing: 0.02px;
+}
+
 
 .mob-address-list {
   display: flex;
@@ -349,11 +367,11 @@ address {
   gap: 72px;
 }
 
-.company-item {
-  display: flex;
+/* .company-item {
+  margin-bottom: 8px;
   flex-direction: column;
   gap: 8px;
-}
+} */
 
 .container-item-icon {
   display: none;
@@ -369,6 +387,7 @@ address {
   text-transform: capitalize;
   color: #2E2F42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .company-item-text {
@@ -414,13 +433,14 @@ address {
 .team-img {}
 
 .team-item-name {
-  display: flex;
-  flex-direction: column;
+
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 32px 0;
-  gap: 8px;
-  max-height: 168px;
+  /* gap: 8px; */
+ 
+ 
 }
 
 .team-item-subtitle {
@@ -430,6 +450,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -437,6 +458,7 @@ address {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-soc {
@@ -542,12 +564,13 @@ address {
 }
 
 .portfolio-item-border {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   border: 1px solid #E7E9FC;
   border-top: none;
   padding: 32px 16px;
   gap: 8px;
+  
 }
 
 .portfolio-item-subtitle {
@@ -563,6 +586,7 @@ address {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 /*=================================*/
@@ -581,7 +605,6 @@ address {
 
 .footer-container-logo {
   margin-bottom: 72px;
-  display: flex;
   gap: 16px;
   flex-direction: column;
   justify-content: flex-start;
@@ -612,7 +635,7 @@ address {
 
 .footer-container-soc {
   margin-bottom: 72px;
-  display: flex;
+  
   padding: 0;
   flex-direction: column;
   /*justify-content: flex-start;
@@ -667,7 +690,7 @@ address {
 }
 
 .footer-container-form {
-  display: flex;
+  
   padding: 0;
   flex-direction: column;
   /*justify-content: flex-start;
@@ -997,7 +1020,6 @@ address {
 
   .header-menu {
     display: flex;
-    margin-right: 122px;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -1011,7 +1033,6 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1101,7 +1122,9 @@ address {
   }
 
   .container {
-    max-width: 768px;
+    max-width: 584px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .company-list {
@@ -1114,10 +1137,10 @@ address {
 
   .company-item-subtitle {
     text-align: left;
+    margin-bottom: 8px;
   }
 
   .team-list {
-    padding: 0 92px;
     gap: 64px 24px;
   }
 
@@ -1156,6 +1179,8 @@ address {
   .footer-container-soc {
     max-width: 208px;
   }
+
+
 
   .footer-soc-text {
     text-align: left;
@@ -1241,11 +1266,11 @@ address {
 
   .company-item {
     width: calc((100% - 3 * 24px) / 4);
-    gap: 8px;
+    /* gap: 8px; */
   }
 
   .container-item-icon {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -1254,6 +1279,7 @@ address {
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background: #F4F4FD;
+    margin-bottom: 8px;
   }
 
   .company-item-icon {
@@ -1265,6 +1291,7 @@ address {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    margin-bottom: 8px;
   }
 
   .company-item-text {
