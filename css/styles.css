@@ -49,7 +49,6 @@ address {
 
 /*----- header -----*/
 .header {
-  
   border-bottom: 1px solid #E7E9FC;
   background: #FFF;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -270,6 +269,7 @@ address {
 /*======main=====*/
 .main-page {
   background-color: #ffffff;
+  
 }
 
 /*=====content======*/
@@ -365,6 +365,7 @@ address {
   flex-wrap: wrap;
   display: flex;
   gap: 72px;
+  display: block;
 }
 
 /* .company-item {
@@ -518,7 +519,7 @@ address {
 }
 
 .portfolio-list {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   gap: 48px;
 }
@@ -604,6 +605,7 @@ address {
 }
 
 .footer-container-logo {
+  text-align: center;
   margin-bottom: 72px;
   gap: 16px;
   flex-direction: column;
@@ -628,9 +630,11 @@ address {
 
 .footer-text {
   width: 100%;
+  text-align: left;
   color: #F4F4FD;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 17.5px;
 }
 
 .footer-container-soc {
@@ -650,7 +654,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  /*margin: 0 auto;*/
+  margin-bottom: 16px;
 }
 
 .footer-soc-list {
@@ -1026,6 +1030,7 @@ address {
   }
 
   .header-menu-link {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
     color: #2E2F42;
@@ -1075,7 +1080,11 @@ address {
     justify-content: center;
   }
 
-  .header-address-item {}
+  /* .header-menu.list {
+    padding-left: 120px;
+    padding-right: 122px; */
+    
+  }
 
   .header-address-link {
     color: #434455;
@@ -1122,10 +1131,20 @@ address {
   }
 
   .container {
-    max-width: 584px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
+
+.container.team-container{
+  max-width: 584px;
+}
+
+
+.container.footer-container{
+  max-width: 584px;
+}
+
 
   .company-list {
     gap: 72px 24px;
@@ -1170,6 +1189,7 @@ address {
   .footer-container-logo {
     max-width: 264px;
     margin-right: 24px;
+    text-align: left;
   }
 
   .footer-logo {
@@ -1203,7 +1223,7 @@ address {
     width: 408px;
     min-height: 584px;
   }
-}
+
 
 /*==============1158====================*/
 
@@ -1253,6 +1273,15 @@ address {
     max-width: 1158px;
     padding: 0 15px;
   }
+
+  .container.team-container {
+    max-width: 1158px;
+    }
+
+
+  .container.footer-container {
+     max-width: 1158px;
+        }
 
   .section {
     padding-top: 120px;
